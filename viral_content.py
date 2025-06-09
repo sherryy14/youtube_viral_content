@@ -8,7 +8,8 @@ from datetime import datetime, timedelta
 
 # YouTube API Key
 
-API_KEY = "Enter your API Key here"
+# API_KEY = "Enter your API Key here"
+API_KEY = "AIzaSyBzCXQEkdluqgpLuPxRy8VIigKnYz8fovo"
 
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 
@@ -32,20 +33,6 @@ days = st.number_input("Enter Days to Search (1-30):", min_value=1, max_value=30
 keywords = [
     # Celebrity vs Celebrity
     "messi fans vs ronaldo fans",
-    "messi fans vs ronaldo fans",
-    "messi fans vs ronaldo fans debate",
-    "messi fans vs ronaldo fans in ethiopia",
-    "messi fans vs ronaldo fans fight",
-    "messi fans vs ronaldo fans football match",
-    "messi fans vs ronaldo fans shorts",
-    "messi fans vs ronaldo fans kerala",
-    "messi fans vs ronaldo fans india",
-    "players fans messi vs player's fans ronaldo",
-    "messi fans vs ronaldo fans edit",
-    "messi fans vs ronaldo fans football match in ethiopia",
-    "messi fans vs ronaldo fans ethiopian",
-    "ronaldo with his fans vs messi with his fans,"
-    "taylor swift fans vs messi and ronaldo fans",
     "Ronaldo vs Messi",
     "Virat Kohli vs Babar Azam",
     "SRK vs Salman Khan",
@@ -56,35 +43,35 @@ keywords = [
     "Deepika Padukone vs Alia Bhatt",
     "Elon Musk vs Jeff Bezos",
 
-    # AI-Generated Celebrity Content
-    "AI Celebrity Faceoff",
-    "AI Creates Celebrity Baby",
-    "AI Imagines Celebrity Fight",
-    "AI Generates Ronaldo vs Messi",
-    "AI Comparison Celebrities",
-    "AI Predicts Celebrity Future",
-    "AI Face Swap Bollywood",
-    "Deepfake Celebrity Comparison",
-    "AI Celebrity Mashup Video",
+    # # AI-Generated Celebrity Content
+    # "AI Celebrity Faceoff",
+    # "AI Creates Celebrity Baby",
+    # "AI Imagines Celebrity Fight",
+    # "AI Generates Ronaldo vs Messi",
+    # "AI Comparison Celebrities",
+    # "AI Predicts Celebrity Future",
+    # "AI Face Swap Bollywood",
+    # "Deepfake Celebrity Comparison",
+    # "AI Celebrity Mashup Video",
 
-    # Fan Wars & Viral Controversy
-    "Messi fans vs Ronaldo fans",
-    "Babar Azam fans vs Kohli fans",
-    "Celebrity fights 2024",
-    "Celebrity controversies AI",
-    "Top 10 football rivalries",
-    "Top 10 Bollywood rivalries",
-    "Viral celebrity feud 2024",
-    "Underrated vs Overrated Celebrity",
+    # # Fan Wars & Viral Controversy
+    # "Messi fans vs Ronaldo fans",
+    # "Babar Azam fans vs Kohli fans",
+    # "Celebrity fights 2024",
+    # "Celebrity controversies AI",
+    # "Top 10 football rivalries",
+    # "Top 10 Bollywood rivalries",
+    # "Viral celebrity feud 2024",
+    # "Underrated vs Overrated Celebrity",
 
-    # Format & Style Keywords
-    "Celebrity comparison video",
-    "Top 10 Celebrity Rivalries",
-    "Who is better - Ronaldo or Messi",
-    "Before and After Celebrity AI",
-    "Most controversial celebrity moments",
-    "Best of Celebrity Fights Compilation",
-    "Celebrity statistics comparison"
+    # # Format & Style Keywords
+    # "Celebrity comparison video",
+    # "Top 10 Celebrity Rivalries",
+    # "Who is better - Ronaldo or Messi",
+    # "Before and After Celebrity AI",
+    # "Most controversial celebrity moments",
+    # "Best of Celebrity Fights Compilation",
+    # "Celebrity statistics comparison"
 ]
 
 
@@ -212,7 +199,7 @@ if st.button("Fetch Data"):
                 subs = int(channel["statistics"].get("subscriberCount", 0))
 
 
-                if subs < 15000:  # Only include channels with fewer than 3,000 subscribers
+                if subs < 3000:  # Only include channels with fewer than 3,000 subscribers
 
                     all_results.append({
 
@@ -255,7 +242,7 @@ if st.button("Fetch Data"):
 
         else:
 
-            st.warning("No results found for channels with fewer than 15,000 subscribers.")
+            st.warning("No results found for channels with fewer than 3,000 subscribers.")
 
 
     except Exception as e:
