@@ -30,22 +30,48 @@ days = st.number_input("Enter Days to Search (1-30):", min_value=1, max_value=30
 # List of broader keywords
 
 keywords = [
+    # Celebrity vs Celebrity
+    "Ronaldo vs Messi",
+    "Virat Kohli vs Babar Azam",
+    "SRK vs Salman Khan",
+    "Cristiano Ronaldo vs Neymar",
+    "Tom Cruise vs Leonardo DiCaprio",
+    "Taylor Swift vs Billie Eilish",
+    "Ranbir Kapoor vs Ranveer Singh",
+    "Deepika Padukone vs Alia Bhatt",
+    "Elon Musk vs Jeff Bezos",
 
- "Affair Relationship Stories", "Reddit Update", "Reddit Relationship Advice", "Reddit Relationship",
+    # # AI-Generated Celebrity Content
+    # "AI Celebrity Faceoff",
+    # "AI Creates Celebrity Baby",
+    # "AI Imagines Celebrity Fight",
+    # "AI Generates Ronaldo vs Messi",
+    # "AI Comparison Celebrities",
+    # "AI Predicts Celebrity Future",
+    # "AI Face Swap Bollywood",
+    # "Deepfake Celebrity Comparison",
+    # "AI Celebrity Mashup Video",
 
-"Reddit Cheating", "AITA Update", "Open Marriage", "Open Relationship", "X BF Caught",
+    # # Fan Wars & Viral Controversy
+    # "Messi fans vs Ronaldo fans",
+    # "Babar Azam fans vs Kohli fans",
+    # "Celebrity fights 2024",
+    # "Celebrity controversies AI",
+    # "Top 10 football rivalries",
+    # "Top 10 Bollywood rivalries",
+    # "Viral celebrity feud 2024",
+    # "Underrated vs Overrated Celebrity",
 
-"Stories Cheat", "X GF Reddit", "AskReddit Surviving Infidelity", "GurlCan Reddit",
-
-"Cheating Story Actually Happened", "Cheating Story Real", "True Cheating Story",
-
-"Reddit Cheating Story", "R/Surviving Infidelity", "Surviving Infidelity",
-
-"Reddit Marriage", "Wife Cheated I Can't Forgive", "Reddit AP", "Exposed Wife",
-
-"Cheat Exposed"
-
+    # # Format & Style Keywords
+    # "Celebrity comparison video",
+    # "Top 10 Celebrity Rivalries",
+    # "Who is better - Ronaldo or Messi",
+    # "Before and After Celebrity AI",
+    # "Most controversial celebrity moments",
+    # "Best of Celebrity Fights Compilation",
+    # "Celebrity statistics comparison"
 ]
+
 
 
 # Fetch Data Button
