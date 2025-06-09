@@ -31,6 +31,7 @@ days = st.number_input("Enter Days to Search (1-30):", min_value=1, max_value=30
 
 keywords = [
     # Celebrity vs Celebrity
+    "messi fans vs ronaldo fans",
     "Ronaldo vs Messi",
     "Virat Kohli vs Babar Azam",
     "SRK vs Salman Khan",
@@ -240,7 +241,7 @@ if st.button("Fetch Data"):
 
         else:
 
-            st.warning("No results found for channels with fewer than 5,000 subscribers.")
+            st.warning("No results found for channels with fewer than 15,000 subscribers.")
 
 
     except Exception as e:
